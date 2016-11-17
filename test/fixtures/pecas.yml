@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: 
+  nome: MyString
+  medida: 1.5
+  tipo: MyString
+  quantidade: 1
+  modeloMotor: MyString
+
+two:
+  codigo: 
+  nome: MyString
+  medida: 1.5
+  tipo: MyString
+  quantidade: 1
+  modeloMotor: MyString

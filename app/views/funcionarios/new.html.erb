@@ -1,0 +1,37 @@
+<% provide(:title, 'Cadastro') %>
+<h1>Cadastro</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@funcionario) do |f| %>
+      <%= f.label :"CPF" %>
+      <%= f.text_field :cpf %>
+
+      <%= f.label :"Nome" %>
+      <%= f.text_field :nome %>
+
+      <%= f.label :"Telefone" %>
+      <%= f.text_field :telefone %>
+
+      <%= f.label :"Endereço" %>
+      <%= f.text_field :endereco %>
+
+      <%= f.label :"Cargo" %>
+      <%= f.text_field :cargo %>
+
+      <%= f.label :"Horário" %>
+      <%= f.text_field :horario %>
+
+      <%= f.label :"Sexo" %>
+      <%= f.text_field :sexo %>
+
+      <%= f.label :"Senha" %>
+      <%= f.password_field :password %>
+
+      <%= f.label :"Confirmação de Senha" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Cadastrar Funcionário", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

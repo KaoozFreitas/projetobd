@@ -1,0 +1,10 @@
+<% provide(:title, 'Funcionários') %>
+<h1>Funcionários</h1>
+
+<ul class="users">
+  <% @funcionarios.each do |funcionario| %>
+    <li>
+      <%= link_to funcionario.cpf, funcionario %>
+    </li>
+  <% end %>
+</ul>

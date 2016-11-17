@@ -1,0 +1,9 @@
+<% provide(:title, 'Peças') %>
+<h1>Peças</h1>
+
+<% @pecas.each do |peca| %>
+    <p>
+      <h3>Nome: <%= peca.nome %> - <%= peca.codigo %></h3>
+      <%= link_to 'Detalhes', peca %>
+    </p>
+<% end %>
